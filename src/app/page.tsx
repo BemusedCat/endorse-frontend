@@ -1,113 +1,214 @@
-import Image from "next/image";
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div className="min-h-screen bg-gray-100">
+      <Head>
+        <title>Endorse - Testimonials Made Easy</title>
+        <meta
+          name="description"
+          content="Collect and display testimonials effortlessly"
         />
-      </div>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      {/* Header Section */}
+      <header className="bg-white shadow">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center py-6">
+            <h1 className="text-3xl font-bold text-gray-900">Endorse</h1>
+            <nav>
+              <a
+                href="#features"
+                className="text-gray-900 hover:text-blue-600 px-3"
+              >
+                Features
+              </a>
+              <a
+                href="#testimonials"
+                className="text-gray-900 hover:text-blue-600 px-3"
+              >
+                Testimonials
+              </a>
+              <a
+                href="#pricing"
+                className="text-gray-900 hover:text-blue-600 px-3"
+              >
+                Pricing
+              </a>
+              <a
+                href="#cta"
+                className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded ml-4"
+              >
+                Get Started
+              </a>
+            </nav>
+          </div>
+        </div>
+      </header>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+      {/* Hero Section */}
+      <section className="bg-blue-600 text-white py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl font-bold">
+            Collect and Display Testimonials Effortlessly
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="mt-4 text-lg">
+            Endorse helps you build trust by showcasing real customer
+            testimonials.
           </p>
-        </a>
+          <button className="mt-8 px-6 py-3 bg-white text-blue-600 rounded hover:bg-gray-200">
+            Start Your Free Trial
+          </button>
+        </div>
+      </section>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
+      {/* Features Section */}
+      <section id="features" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900">Features</h2>
+          <p className="mt-4 text-lg text-gray-700">
+            Everything you need to make your testimonials stand out.
           </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Feature 1 */}
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold text-gray-900">Feature One</h3>
+              <p className="mt-2 text-gray-600">
+                Placeholder for your first key feature.
+              </p>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold text-gray-900">Feature Two</h3>
+              <p className="mt-2 text-gray-600">
+                Placeholder for your second key feature.
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold text-gray-900">Feature Three</h3>
+              <p className="mt-2 text-gray-600">
+                Placeholder for your third key feature.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section id="testimonials" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900">
+            What Our Users Say
           </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <p className="mt-4 text-lg text-gray-700">
+            Real testimonials from our satisfied customers.
           </p>
-        </a>
-      </div>
-    </main>
+
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Testimonial 1 */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow">
+              <p className="text-gray-600">
+                "Endorse made collecting testimonials so easy! Highly
+                recommended!"
+              </p>
+              <p className="mt-4 font-bold text-gray-900">- John Doe</p>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow">
+              <p className="text-gray-600">
+                "A game-changer for our business!"
+              </p>
+              <p className="mt-4 font-bold text-gray-900">- Jane Smith</p>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-gray-50 p-6 rounded-lg shadow">
+              <p className="text-gray-600">
+                "We saw a significant increase in trust after using Endorse."
+              </p>
+              <p className="mt-4 font-bold text-gray-900">- Alex Johnson</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Pricing Section */}
+      <section id="pricing" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold text-gray-900">
+            Affordable Pricing
+          </h2>
+          <p className="mt-4 text-lg text-gray-700">
+            Choose a plan that fits your needs.
+          </p>
+
+          <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Pricing Plan 1 */}
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold text-gray-900">Basic Plan</h3>
+              <p className="mt-2 text-gray-600">$10/month</p>
+              <p className="mt-4 text-gray-600">
+                For small businesses just starting out.
+              </p>
+              <button className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                Choose Plan
+              </button>
+            </div>
+
+            {/* Pricing Plan 2 */}
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold text-gray-900">Pro Plan</h3>
+              <p className="mt-2 text-gray-600">$30/month</p>
+              <p className="mt-4 text-gray-600">
+                For growing businesses looking for more features.
+              </p>
+              <button className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                Choose Plan
+              </button>
+            </div>
+
+            {/* Pricing Plan 3 */}
+            <div className="bg-white p-6 rounded-lg shadow">
+              <h3 className="text-xl font-bold text-gray-900">
+                Enterprise Plan
+              </h3>
+              <p className="mt-2 text-gray-600">Custom Pricing</p>
+              <p className="mt-4 text-gray-600">
+                For large businesses with specific needs.
+              </p>
+              <button className="mt-6 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action Section */}
+      <section id="cta" className="py-20 bg-blue-600 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-bold">Get Started with Endorse Today</h2>
+          <p className="mt-4 text-lg">
+            Start building trust with testimonials now.
+          </p>
+          <button className="mt-8 px-6 py-3 bg-white text-blue-600 rounded hover:bg-gray-200">
+            Sign Up Now
+          </button>
+        </div>
+      </section>
+
+      {/* Footer Section */}
+      <footer className="flex items-center justify-center w-full h-24 border-t bg-white">
+        <p className="text-gray-500">
+          &copy; 2024 Endorse. All rights reserved.
+        </p>
+      </footer>
+    </div>
   );
 }
